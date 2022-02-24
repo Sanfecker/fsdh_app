@@ -7,22 +7,25 @@ class Category {
   Category(this.category, this.limit);
 }
 
+class IncomeData {
+  String title;
+  String amount;
+
+  IncomeData(this.title, this.amount);
+}
+
 class Day {
   int day;
   Map<String, int> expense;
   Day(this.day, this.expense);
 }
 
-// class Expense {
-//   int day;
-//   String category;
-//   int amount;
-// }
-
 class Expense {
-  late int day;
-  late String category;
-  late int amount;
+  int day;
+  String category;
+  int amount;
+
+  Expense(this.day, this.category, this.amount);
 }
 
 var budgetData = {
